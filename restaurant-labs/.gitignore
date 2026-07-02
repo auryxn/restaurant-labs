@@ -38,3 +38,6 @@ out/
 
 # runtime logs
 logs/
+
+# Maven build output
+target/
