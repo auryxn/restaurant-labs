@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: restaurant-labs
+  datasource:
+    url: jdbc:h2:mem:restaurantdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+server:
+  error:
+    whitelabel:
+      enabled: false
+
+app:
+  jwt:
+    secret: "restaurant-labs-secret-key-for-jwt-demo-please-change-in-production-256-bit"
+    expiration-ms: 86400000
+
+logging:
+  level:
+    root: INFO
+    com.auryxn.restaurantlabs: DEBUG
+    org.springframework.security: INFO
+  file:
+    name: logs/restaurant-labs.log

@@ -1,0 +1,7 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/extras/spring-security"><head th:replace="~{layout :: head('Menu')}"></head><body><div th:replace="~{layout :: nav}"></div>
+<div class="card"><h1>Menu</h1><div th:if="${message}" class="flash ok" th:text="${message}"></div><div th:if="${error}" class="flash bad" th:text="${error}"></div>
+<form method="get"><input name="query" placeholder="Search by name or description" th:value="${query}"><select name="restaurantId"><option value="">All restaurants</option><option th:each="r:${restaurants}" th:value="${r.id}" th:text="${r.name}" th:selected="${restaurantId == r.id}"></option></select><button>Search</button></form>
+<a sec:authorize="hasAnyRole('MANAGER','ADMIN')" class="btn" th:href="@{/menu/new}">Add menu item</a></div>
+<table><tr><th>ID</th><th>Name</th><th>Restaurant</th><th>Price</th><th>Available</th><th>Actions</th></tr>
+<tr th:each="i : ${items}"><td th:text="${i.id}"></td><td><a th:href="@{/menu/{id}(id=${i.id})}" th:text="${i.name}"></a></td><td th:text="${i.restaurantName}"></td><td th:text="${i.price}"></td><td th:text="${i.available}"></td><td><a sec:authorize="hasAnyRole('MANAGER','ADMIN')" th:href="@{/menu/{id}/edit(id=${i.id})}">Edit</a><form sec:authorize="hasRole('ADMIN')" th:action="@{/menu/{id}/delete(id=${i.id})}" method="post" style="display:inline"><button class="danger">Delete</button></form></td></tr>
+</table></body></html>

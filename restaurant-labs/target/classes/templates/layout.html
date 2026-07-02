@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/extras/spring-security">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${title}">Restaurant Labs</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 32px; background: #f7f7f7; color: #222; }
+        nav, .card { background: white; padding: 16px; border-radius: 10px; margin-bottom: 16px; box-shadow: 0 1px 5px #ddd; }
+        a { color: #0b63ce; text-decoration: none; margin-right: 10px; }
+        table { width: 100%; border-collapse: collapse; background: white; }
+        th, td { padding: 10px; border-bottom: 1px solid #ddd; text-align: left; }
+        input, select, textarea { width: 100%; padding: 8px; margin: 5px 0 10px; box-sizing: border-box; }
+        button, .btn { padding: 8px 12px; border: 0; border-radius: 6px; background: #0b63ce; color: white; cursor: pointer; }
+        .danger { background: #b00020; }
+        .error { color: #b00020; font-size: 0.9em; }
+        .flash { padding: 10px; border-radius: 6px; margin-bottom: 10px; }
+        .ok { background: #e7f8e7; }
+        .bad { background: #ffe7e7; }
+    </style>
+</head>
+<body>
+<nav th:fragment="nav">
+    <a th:href="@{/restaurants}">Restaurants</a>
+    <a th:href="@{/menu}">Menu</a>
+    <span sec:authorize="isAuthenticated()">Logged as <b sec:authentication="name"></b></span>
+    <a sec:authorize="!isAuthenticated()" th:href="@{/auth/login}">Login</a>
+    <form sec:authorize="isAuthenticated()" th:action="@{/auth/logout}" method="post" style="display:inline"><button type="submit">Logout</button></form>
+</nav>
+</body>
+</html>
