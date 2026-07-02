@@ -25,7 +25,7 @@
     <a th:href="@{/menu}">Menu</a>
     <span sec:authorize="isAuthenticated()">Logged as <b sec:authentication="name"></b></span>
     <a sec:authorize="!isAuthenticated()" th:href="@{/auth/login}">Login</a>
-    <form sec:authorize="isAuthenticated()" th:action="@{/auth/logout}" method="post" style="display:inline"><button type="submit">Logout</button></form>
+    <form sec:authorize="isAuthenticated()" th:action="@{/auth/logout}" method="post" style="display:inline"><input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"><button type="submit">Logout</button></form>
 </nav>
 </body>
 </html>
