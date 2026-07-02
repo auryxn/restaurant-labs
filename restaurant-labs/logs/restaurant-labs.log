@@ -1,0 +1,104 @@
+2026-07-02T08:28:15.277+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.r.RestaurantLabsApplicationTests     : Starting RestaurantLabsApplicationTests using Java 21.0.11 with PID 80064 (started by auryxn in /Users/auryxn/.openclaw/workspace/labs-spring/restaurant-labs)
+2026-07-02T08:28:15.279+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.r.RestaurantLabsApplicationTests     : Running with Spring Boot v4.0.0, Spring v7.0.1
+2026-07-02T08:28:15.280+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.r.RestaurantLabsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2026-07-02T08:28:16.612+03:00  INFO 80064 --- [restaurant-labs] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T08:28:16.706+03:00  INFO 80064 --- [restaurant-labs] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
+2026-07-02T08:28:17.381+03:00  INFO 80064 --- [restaurant-labs] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-02T08:28:17.449+03:00  INFO 80064 --- [restaurant-labs] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2026-07-02T08:28:18.090+03:00  INFO 80064 --- [restaurant-labs] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T08:28:18.149+03:00  INFO 80064 --- [restaurant-labs] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-02T08:28:18.367+03:00  INFO 80064 --- [restaurant-labs] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:restaurantdb user=SA
+2026-07-02T08:28:18.370+03:00  INFO 80064 --- [restaurant-labs] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-02T08:28:18.443+03:00  INFO 80064 --- [restaurant-labs] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:restaurantdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: RESTAURANTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T08:28:19.742+03:00  INFO 80064 --- [restaurant-labs] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T08:28:19.801+03:00  INFO 80064 --- [restaurant-labs] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T08:28:19.982+03:00  INFO 80064 --- [restaurant-labs] [Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-02T08:28:20.514+03:00  INFO 80064 --- [restaurant-labs] [Test worker] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-02T08:28:20.515+03:00  WARN 80064 --- [restaurant-labs] [Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-02T08:28:20.639+03:00  WARN 80064 --- [restaurant-labs] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-02T08:28:21.496+03:00  INFO 80064 --- [restaurant-labs] [Test worker] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:restaurantdb'
+2026-07-02T08:28:21.634+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.r.RestaurantLabsApplicationTests     : Started RestaurantLabsApplicationTests in 7.105 seconds (process running for 8.575)
+2026-07-02T08:28:22.832+03:00  INFO 80064 --- [restaurant-labs] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.auryxn.restaurantlabs.SecurityApiTests]: SecurityApiTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-02T08:28:22.839+03:00  INFO 80064 --- [restaurant-labs] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.auryxn.restaurantlabs.RestaurantLabsApplication for test class com.auryxn.restaurantlabs.SecurityApiTests
+2026-07-02T08:28:22.878+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.SecurityApiTests      : Starting SecurityApiTests using Java 21.0.11 with PID 80064 (started by auryxn in /Users/auryxn/.openclaw/workspace/labs-spring/restaurant-labs)
+2026-07-02T08:28:22.878+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.SecurityApiTests      : Running with Spring Boot v4.0.0, Spring v7.0.1
+2026-07-02T08:28:22.878+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.SecurityApiTests      : No active profile set, falling back to 1 default profile: "default"
+2026-07-02T08:28:23.048+03:00  INFO 80064 --- [restaurant-labs] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T08:28:23.060+03:00  INFO 80064 --- [restaurant-labs] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2026-07-02T08:28:23.169+03:00  INFO 80064 --- [restaurant-labs] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-02T08:28:23.192+03:00  INFO 80064 --- [restaurant-labs] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T08:28:23.193+03:00  INFO 80064 --- [restaurant-labs] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-07-02T08:28:23.194+03:00  INFO 80064 --- [restaurant-labs] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:restaurantdb user=SA
+2026-07-02T08:28:23.195+03:00  INFO 80064 --- [restaurant-labs] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-07-02T08:28:23.196+03:00  INFO 80064 --- [restaurant-labs] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:restaurantdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: RESTAURANTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T08:28:23.248+03:00  INFO 80064 --- [restaurant-labs] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T08:28:23.260+03:00  INFO 80064 --- [restaurant-labs] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T08:28:23.368+03:00  INFO 80064 --- [restaurant-labs] [Test worker] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-02T08:28:23.369+03:00  WARN 80064 --- [restaurant-labs] [Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-02T08:28:23.393+03:00  WARN 80064 --- [restaurant-labs] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-02T08:28:23.609+03:00  INFO 80064 --- [restaurant-labs] [Test worker] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:restaurantdb'
+2026-07-02T08:28:23.684+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.r.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-07-02T08:28:23.685+03:00  INFO 80064 --- [restaurant-labs] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-02T08:28:23.686+03:00  INFO 80064 --- [restaurant-labs] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-02T08:28:23.688+03:00  INFO 80064 --- [restaurant-labs] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-07-02T08:28:23.701+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.SecurityApiTests      : Started SecurityApiTests in 0.859 seconds (process running for 10.642)
+2026-07-02T08:28:24.134+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering AuthRestController.login(..)
+2026-07-02T08:28:24.135+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering AuthService.login(..)
+2026-07-02T08:28:24.226+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering CustomUserDetailsService.loadUserByUsername(..)
+2026-07-02T08:28:24.307+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Completed CustomUserDetailsService.loadUserByUsername(..) in 80 ms
+2026-07-02T08:28:24.398+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.service.AuthService   : User user logged in
+2026-07-02T08:28:24.398+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering CustomUserDetailsService.loadUserByUsername(..)
+2026-07-02T08:28:24.400+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Completed CustomUserDetailsService.loadUserByUsername(..) in 1 ms
+2026-07-02T08:28:24.511+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Completed AuthService.login(..) in 376 ms
+2026-07-02T08:28:24.512+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Completed AuthRestController.login(..) in 377 ms
+2026-07-02T08:28:24.595+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering CustomUserDetailsService.loadUserByUsername(..)
+2026-07-02T08:28:24.626+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Completed CustomUserDetailsService.loadUserByUsername(..) in 31 ms
+2026-07-02T08:28:24.628+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.r.security.JwtAuthenticationFilter   : JWT authenticated user=user
+2026-07-02T08:28:24.632+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering RestaurantRestController.delete(..)
+2026-07-02T08:28:24.663+03:00 ERROR 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Exception in RestaurantRestController.delete(..) after 30 ms: Access Denied
+2026-07-02T08:28:24.665+03:00  WARN 80064 --- [restaurant-labs] [Test worker] c.a.r.exception.GlobalExceptionHandler   : Access denied at /api/restaurants/1
+2026-07-02T08:28:24.674+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering AuthRestController.login(..)
+2026-07-02T08:28:24.675+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering AuthService.login(..)
+2026-07-02T08:28:24.675+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering CustomUserDetailsService.loadUserByUsername(..)
+2026-07-02T08:28:24.677+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Completed CustomUserDetailsService.loadUserByUsername(..) in 1 ms
+2026-07-02T08:28:24.763+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.service.AuthService   : User admin logged in
+2026-07-02T08:28:24.764+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering CustomUserDetailsService.loadUserByUsername(..)
+2026-07-02T08:28:24.765+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Completed CustomUserDetailsService.loadUserByUsername(..) in 1 ms
+2026-07-02T08:28:24.767+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Completed AuthService.login(..) in 91 ms
+2026-07-02T08:28:24.767+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Completed AuthRestController.login(..) in 92 ms
+2026-07-02T08:28:24.771+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering CustomUserDetailsService.loadUserByUsername(..)
+2026-07-02T08:28:24.773+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Completed CustomUserDetailsService.loadUserByUsername(..) in 2 ms
+2026-07-02T08:28:24.778+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.r.security.JwtAuthenticationFilter   : JWT authenticated user=admin
+2026-07-02T08:28:24.780+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering MenuItemRestController.delete(..)
+2026-07-02T08:28:24.782+03:00 DEBUG 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Entering MenuItemService.delete(..)
+2026-07-02T08:28:24.782+03:00  WARN 80064 --- [restaurant-labs] [Test worker] c.a.r.service.MenuItemService            : Deleting menu item id=1
+2026-07-02T08:28:24.795+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Completed MenuItemService.delete(..) in 12 ms
+2026-07-02T08:28:24.799+03:00  INFO 80064 --- [restaurant-labs] [Test worker] c.a.restaurantlabs.aspect.LoggingAspect  : Completed MenuItemRestController.delete(..) in 18 ms
+2026-07-02T08:28:24.812+03:00  INFO 80064 --- [restaurant-labs] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T08:28:24.816+03:00  INFO 80064 --- [restaurant-labs] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-02T08:28:24.818+03:00  INFO 80064 --- [restaurant-labs] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-02T08:28:24.821+03:00  INFO 80064 --- [restaurant-labs] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T08:28:24.822+03:00  INFO 80064 --- [restaurant-labs] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-07-02T08:28:24.824+03:00  INFO 80064 --- [restaurant-labs] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.

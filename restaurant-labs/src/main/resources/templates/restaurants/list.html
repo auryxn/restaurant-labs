@@ -1,0 +1,8 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/extras/spring-security"><head th:replace="~{layout :: head('Restaurants')}"></head><body><div th:replace="~{layout :: nav}"></div>
+<div class="card"><h1>Restaurants</h1>
+<div th:if="${message}" class="flash ok" th:text="${message}"></div><div th:if="${error}" class="flash bad" th:text="${error}"></div>
+<form method="get"><input name="query" placeholder="Search by name or cuisine" th:value="${query}"><button>Search</button></form>
+<a sec:authorize="hasAnyRole('MANAGER','ADMIN')" class="btn" th:href="@{/restaurants/new}">Add restaurant</a></div>
+<table><tr><th>ID</th><th>Name</th><th>Cuisine</th><th>Address</th><th>Menu count</th><th>Actions</th></tr>
+<tr th:each="r : ${restaurants}"><td th:text="${r.id}"></td><td><a th:href="@{/restaurants/{id}(id=${r.id})}" th:text="${r.name}"></a></td><td th:text="${r.cuisine}"></td><td th:text="${r.address}"></td><td th:text="${r.menuItemsCount}"></td><td><a sec:authorize="hasAnyRole('MANAGER','ADMIN')" th:href="@{/restaurants/{id}/edit(id=${r.id})}">Edit</a><form sec:authorize="hasRole('ADMIN')" th:action="@{/restaurants/{id}/delete(id=${r.id})}" method="post" style="display:inline"><button class="danger">Delete</button></form></td></tr>
+</table></body></html>

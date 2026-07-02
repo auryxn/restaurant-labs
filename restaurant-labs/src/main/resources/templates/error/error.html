@@ -1,0 +1,1 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org"><head th:replace="~{layout :: head('Error')}"></head><body><div th:replace="~{layout :: nav}"></div><div class="card"><h1>Error <span th:text="${status}"></span></h1><p th:text="${error}"></p><p th:text="${message}"></p><a th:href="@{/restaurants}">Back</a></div></body></html>
