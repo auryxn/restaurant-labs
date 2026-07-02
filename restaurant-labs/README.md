@@ -55,7 +55,7 @@ Two related entities:
 - `@EnableMethodSecurity` is enabled.
 - Service methods are protected with `@PreAuthorize`.
 
-> Note: the lab text mentions Spring Boot 4.x, Spring Security 7.x and Java 25. The project is generated for Spring Boot 4 and Java 25. If Java 25 is not installed locally, install it or temporarily change the Gradle toolchain in `build.gradle.kts` to your JDK version for local testing.
+> Note: the lab text mentions Spring Boot 4.x, Spring Security 7.x and Java 25. The project is generated for Spring Boot 4 and Java 25. If Java 25 is not installed locally, install it or temporarily change the Java version in `pom.xml` to your JDK version for local testing.
 
 ## Demo users
 
@@ -70,7 +70,7 @@ Seeded automatically on startup:
 ## Run
 
 ```bash
-./gradlew bootRun
+./mvnw spring-boot:run
 ```
 
 Open:
